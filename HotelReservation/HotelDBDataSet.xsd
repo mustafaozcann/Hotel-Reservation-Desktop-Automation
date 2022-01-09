@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HotelDBDataSet" targetNamespace="http://tempuri.org/HotelDBDataSet.xsd" xmlns:mstns="http://tempuri.org/HotelDBDataSet.xsd" xmlns="http://tempuri.org/HotelDBDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HotelDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HotelDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.HotelReservation.Properties.Settings.GlobalReference.Default.HotelDBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CustomerTbTableAdapter" GeneratorDataComponentClassName="CustomerTbTableAdapter" Name="CustomerTb" UserDataComponentName="CustomerTbTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelDBConnectionString (Settings)" DbObjectName="HotelDB.dbo.CustomerTb" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Name, Surname, IdentityNo, PassportNo, MobileNumber, RoomNo, Nationality, CheckoutDate, AcceptCustomer FROM dbo.CustomerTb</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Surname" DataSetColumn="Surname" />
+              <Mapping SourceColumn="IdentityNo" DataSetColumn="IdentityNo" />
+              <Mapping SourceColumn="PassportNo" DataSetColumn="PassportNo" />
+              <Mapping SourceColumn="MobileNumber" DataSetColumn="MobileNumber" />
+              <Mapping SourceColumn="RoomNo" DataSetColumn="RoomNo" />
+              <Mapping SourceColumn="Nationality" DataSetColumn="Nationality" />
+              <Mapping SourceColumn="CheckoutDate" DataSetColumn="CheckoutDate" />
+              <Mapping SourceColumn="AcceptCustomer" DataSetColumn="AcceptCustomer" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HotelDBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="HotelDBDataSet" msprop:Generator_UserDSName="HotelDBDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CustomerTb" msprop:Generator_TableClassName="CustomerTbDataTable" msprop:Generator_TableVarName="tableCustomerTb" msprop:Generator_TablePropName="CustomerTb" msprop:Generator_RowDeletingName="CustomerTbRowDeleting" msprop:Generator_RowChangingName="CustomerTbRowChanging" msprop:Generator_RowEvHandlerName="CustomerTbRowChangeEventHandler" msprop:Generator_RowDeletedName="CustomerTbRowDeleted" msprop:Generator_UserTableName="CustomerTb" msprop:Generator_RowChangedName="CustomerTbRowChanged" msprop:Generator_RowEvArgName="CustomerTbRowChangeEvent" msprop:Generator_RowClassName="CustomerTbRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Surname" msprop:Generator_ColumnVarNameInTable="columnSurname" msprop:Generator_ColumnPropNameInRow="Surname" msprop:Generator_ColumnPropNameInTable="SurnameColumn" msprop:Generator_UserColumnName="Surname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdentityNo" msprop:Generator_ColumnVarNameInTable="columnIdentityNo" msprop:Generator_ColumnPropNameInRow="IdentityNo" msprop:Generator_ColumnPropNameInTable="IdentityNoColumn" msprop:Generator_UserColumnName="IdentityNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PassportNo" msprop:Generator_ColumnVarNameInTable="columnPassportNo" msprop:Generator_ColumnPropNameInRow="PassportNo" msprop:Generator_ColumnPropNameInTable="PassportNoColumn" msprop:Generator_UserColumnName="PassportNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MobileNumber" msprop:Generator_ColumnVarNameInTable="columnMobileNumber" msprop:Generator_ColumnPropNameInRow="MobileNumber" msprop:Generator_ColumnPropNameInTable="MobileNumberColumn" msprop:Generator_UserColumnName="MobileNumber">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RoomNo" msprop:Generator_ColumnVarNameInTable="columnRoomNo" msprop:Generator_ColumnPropNameInRow="RoomNo" msprop:Generator_ColumnPropNameInTable="RoomNoColumn" msprop:Generator_UserColumnName="RoomNo" type="xs:int" minOccurs="0" />
+              <xs:element name="Nationality" msprop:Generator_ColumnVarNameInTable="columnNationality" msprop:Generator_ColumnPropNameInRow="Nationality" msprop:Generator_ColumnPropNameInTable="NationalityColumn" msprop:Generator_UserColumnName="Nationality">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CheckoutDate" msprop:Generator_ColumnVarNameInTable="columnCheckoutDate" msprop:Generator_ColumnPropNameInRow="CheckoutDate" msprop:Generator_ColumnPropNameInTable="CheckoutDateColumn" msprop:Generator_UserColumnName="CheckoutDate" type="xs:dateTime" />
+              <xs:element name="AcceptCustomer" msprop:Generator_ColumnVarNameInTable="columnAcceptCustomer" msprop:Generator_ColumnPropNameInRow="AcceptCustomer" msprop:Generator_ColumnPropNameInTable="AcceptCustomerColumn" msprop:Generator_UserColumnName="AcceptCustomer" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
